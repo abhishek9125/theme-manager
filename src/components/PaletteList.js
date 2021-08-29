@@ -13,7 +13,7 @@ class PaletteList extends Component {
   getPaletteBox = (palettes) => {
     return palettes.map((palette) => {
       return (
-        <MiniPalette {...palette} handleClick={() => {this.goToPalette(palette.id)}}/>
+        <MiniPalette {...palette} key={palette.id} handleClick={() => {this.goToPalette(palette.id)}}/>
       )
     })
   }
