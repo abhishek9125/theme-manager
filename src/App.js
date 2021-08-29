@@ -4,6 +4,7 @@ import Palette from "./components/Palette";
 import seedColors from "./seedColors";
 import {generatePalette} from './helpers/colorHelpers';
 import PaletteList from "./components/PaletteList";
+import SingleColorPalette from "./components/SingleColorPalette";
 
 function App() {
 
@@ -26,7 +27,7 @@ function App() {
       <Route 
         exact
         path='/palette/:paletteId/:colorId'
-        render={() => <h1>Single Color</h1>}
+        render={() => <SingleColorPalette />}
       />
     </Switch>
     // <div className="App">
