@@ -35,12 +35,14 @@ const styles = {
 
 class PaletteList extends Component {
 
+  goToPalette = (id) => {
+    this.props.history.push(`/palette/${id}`)
+  }
+
   getPaletteBox = (palettes) => {
     return palettes.map((palette) => {
       return (
-        <Link to={`/palette/${palette.id}`} style={{ textDecoration: 'none' }}>
-          <MiniPalette {...palette}/>
-        </Link>          
+        <MiniPalette {...palette} handleClick={() => {this.goToPalette(palette.id)}}/>
       )
     })
   }
