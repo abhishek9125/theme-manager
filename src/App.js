@@ -5,6 +5,7 @@ import seedColors from "./seedColors";
 import {generatePalette} from './helpers/colorHelpers';
 import PaletteList from "./components/PaletteList";
 import SingleColorPalette from "./components/SingleColorPalette";
+import NewPaletteForm from "./components/NewPaletteForm";
 
 function App() {
 
@@ -14,6 +15,11 @@ function App() {
 
   return (
     <Switch>
+      <Route 
+        exact
+        path='/palette/new'
+        render={() => <NewPaletteForm />}
+      />
       <Route 
         exact 
         path='/' 
