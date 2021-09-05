@@ -1,10 +1,14 @@
+import bg from './bg.svg'
 export default {
     root: {
-      background: "blue",
       height: "100vh",
       display: "flex",
       alignItems: "flex-start",
-      justifyContent: "center"
+      justifyContent: "center",
+      /* background by SVGBackgrounds.com */
+      backgroundColor: "#394BAD",
+      backgroundImage: `url(${bg})`,
+      overflow: "scroll"
     },
     container: {
       width: "50%",
