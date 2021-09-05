@@ -3,7 +3,7 @@ import { withStyles } from "@material-ui/core/styles";
 import classNames from "classnames";
 import { Link } from "react-router-dom";
 import { CssBaseline, AppBar, Toolbar, Typography, IconButton, Button } from "@material-ui/core";
-import { Menu } from "@material-ui/icons";
+import { AddToPhotos } from "@material-ui/icons";
 import PaletteMetaForm from './PaletteMetaForm';
 import styles from '../styles/PaletteFormNavStyles'
 
@@ -46,7 +46,7 @@ class PaletteFormNav extends Component {
               onClick={handleDrawerOpen}
               className={classNames(classes.menuButton, open && classes.hide)}
             >
-              <Menu />
+              <AddToPhotos />
             </IconButton>
             <Typography variant='h6' color='inherit' noWrap>
               Create A Palette
